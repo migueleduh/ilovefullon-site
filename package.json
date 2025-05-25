@@ -1,0 +1,26 @@
+{
+  "name": "ilovefullon-site",
+  "version": "1.0.0",
+  "description": "Esse projeto tem como objetivo Apresentar um portal de informações e curiosidades do Psytrance, como informações de Djs do meio, eventos cobertos pela pagina, etc. É uma aplicação pensada inicialmente mais para vizualização do Usuario, mas tambem terá interação com o Usuario e a pagina por meio de um formulario de mensagem.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/migueleduh/ilovefullon-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/migueleduh/ilovefullon-site/issues"
+  },
+  "homepage": "https://github.com/migueleduh/ilovefullon-site#readme",
+  "dependencies": {
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
