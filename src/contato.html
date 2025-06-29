@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class=" left-0 top-0 w-full z-10 hover:bg-neutral-950">
+    <nav>
+      <div class=" flex flex-wrap items-center justify-between mx-auto py-5 px-7">
+        <span class="">
+          <a href="#" class="">
+            <i class="fa-solid fa-magnifying-glass text-gray-100"></i>
+          </a>
+        </span>
+      <a href="index.html" class="mx-auto">
+        <span class="self-center text-4xl font whitespace-nowrap text-gray-100 " style="font-family: Dancing Script;">I Love Fullon</span>
+      </a>
+      <button data-collapse-toggle="navbar-hamburger" type="button" class="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-white rounded-lg hover:bg-gray-100 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+       </svg>
+      </button>
+      <div class="hidden w-full z-10" id="navbar-hamburger">
+        <ul class="flex  flex-col  font-medium mt-4 mx-5 rounded-lg bg-neutral-950 dark:bg-gray-800 dark:border-gray-700">
+          <li>
+           <a href="index.html" class="block py-2 px-3 text-gray-100 bg-neutral-950 rounded-sm  hover:text-gray-900 hover:bg-gray-100" aria-current="page">Inicio</a>
+          </li>
+          <li>
+            <a href="sobre.html" class="block py-2 px-3 text-gray-100   hover:bg-gray-100  hover:text-gray-900 rounded-sm ">Sobre</a>
+          </li>
+          <li>
+             <a href="#" class="block py-2 px-3 text-gray-100 rounded-sm hover:bg-gray-100 hover:text-gray-900">Loja</a>
+           </li>
+            <li>
+              <a href="#" class="block py-2 px-3 text-gray-100 rounded-sm  bg-cyan-500 hover:text-gray-900">Contato</a>
+            </li>
+        </ul>
+       </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class=" bg-neutral-950 lg:py-24 py-10  font-mono ">
+      <h1 class=" text-gray-300 text-5xl font-extrabold text-center mb-20 lg:mb-25 lg:text-7xl">CONTATO</h1>
+      <div class=" container  md:mx-auto flex flex-col md:flex-row md:justify-center md:gap-24">
+        <div class="px-5 pb-12  md:w-[50%]">
+          <h2 class="text-gray-300 font-extrabold  mb-10 text-lg lg:text-2xl ">ENVIE UMA MENSAGEM A NÓS</h2>
+
+          <form class="text-gray-500 flex flex-col items-start gap-y-5 lg:text-lg">
+              <select class=" mb-2 border-b rounded-md" name="assunto" id="assunto" required>
+                  <option value="" disabled selected hidden>Selecione um assunto</option>
+                  <option value="sugestao">Sugestão</option>
+                  <option value="elogio">Elogio</option>
+                  <option value="duvida">Dúvida</option>
+                  <option value="problema">Problema técnico</option>
+              </select>
+
+             <input
+               class="border-b focus:border-b-cyan-500 outline-none w-full p-2"
+               type="text"
+               name="nome"
+               placeholder="Nome"
+               required>
+
+              <input class="border-b  focus:border-b-cyan-500 outline-none w-full p-2"
+               type="email"
+               name="email"
+               placeholder="Email"
+               required>
+
+              <input class="border-b  focus:border-b-cyan-500 outline-none w-full p-2"
+                type="tel" 
+                name="phone"
+                id="phone"
+                placeholder="Phone"
+                pattern="^\(\d{2}\) \d{4,5}-\d{4}$"  
+                title="Digite apenas números com DDD. Ex: 11999999999">
+
+              <textarea class="border-b  focus:border-b-cyan-500 outline-none w-full p-2"
+                id="mensagem"
+                name="mensagem"
+                placeholder="Mensagem"
+                rows="4"
+                cols="50" required></textarea>
+              
+  
+              <input class="border p-3 text-gray-300 mt-5 focus:bg-cyan-500 rounded-sm"
+                type="submit"
+                value="ENVIAR">
+                <p id="mensagemSucesso" style="display: none; color: lightgreen;">Mensagem enviada com sucesso!</p>
+
+          </form>
+        </div>
+
+        <!-- \d significa "qualquer dígito numérico", ou seja, um número de 0 a 9.
+
+              {10,11} é um quantificador que diz quantas vezes o dígito deve aparecer consecutivamente:
+
+              No mínimo 10 vezes
+
+                No máximo 11 vezes -->
+
+
+        <div class="px-5 pb-5 md:w-[50%] ">
+          <h2 class="text-gray-300 font-extrabold  mb-10 text-lg lg:text-2xl">ONDE NOS ENCONTRAR</h2>
+          <article class="text-gray-500 flex flex-col gap-6 lg:text-lg">
+            <a class="text-md"><i class="fa-solid fa-location-pin"></i>  Rua das Psicodelia, 2025, Saturno</a>
+            <a ><i class="fa-regular fa-envelope"></i>  ilovefulloncompany@gmail.com</a>
+            <a><i class="fa-solid fa-phone"></i>  +55 (00) 0000-0000</a>
+            <p>
+              Se você gosta da nosso conteúdo ou apenas quer nos dizer oi, adoraríamos ouvir você.
+               Siga-nos nas redes sociais ou use este formulário de contato para nos enviar um e-mail.
+            </p>  
+          </article>
+        </div>
+      </div>  
+    </section>
+  </main>
+
+
+   <footer class=" bg-neutral-900">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+              <div class="mb-6 md:mb-0">
+                  <a href="index.html" class="flex items-center">
+                      <img src="/assets/image/logo2.png" class="h-18 me-3" alt="FlowBite Logo" />
+                      
+                  </a>
+              </div>
+              <div class=" grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                  <div >
+                      <h2 class="mb-6 text-sm font-semibold uppercase text-white">Resources</h2>
+                      <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                          <li class="mb-4">
+                              <a href="#" class="hover:underline  hover:text-cyan-500">Flowbite</a>
+                          </li>
+                          <li>
+                              <a href="#" class="hover:underline  hover:text-cyan-500">Tailwind CSS</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div>
+                      <h2 class="mb-6 text-sm font-semibold uppercase text-white">Follow us</h2>
+                      <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                          <li class="mb-4">
+                              <a href="https://www.instagram.com/ilovefullon/" class="hover:underline  hover:text-cyan-500">Instagram</a>
+                          </li>
+                          <li>
+                              <a href="https://www.facebook.com/ILoveFullon" class="hover:underline  hover:text-cyan-500">Facebook</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div>
+                      <h2 class="lg:mb-6 text-sm font-semibold uppercase text-white">Legal</h2>
+                      <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                          <li class="mb-4">
+                              <a href="#" class="hover:underline  hover:text-cyan-500">Privacy Policy</a>
+                          </li>
+                          <li>
+                              <a href="#" class="hover:underline  hover:text-cyan-500">Terms &amp; Conditions</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+          <div class="sm:flex sm:items-center sm:justify-between">
+              <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a class="hover:underline">Created By Miguel Eduardo Silva™</a>. All Rights Reserved.
+              </span>
+              <div class=" flex mt-4 sm:items-center sm:justify-center sm:mt-0">
+                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                      <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                            <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                        </svg>
+                      <span class="sr-only">Facebook page</span>
+                  </a>
+              
+                
+                  <a href="https://github.com/migueleduh" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                      <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                      </svg>
+                      <span class="sr-only">GitHub account</span>
+                  </a>
+
+                  <a href="https://www.instagram.com/eduh_silvah1/" class=" hover:text-gray-900 dark:hover:text-white ms-5">
+                      <svg class="w-6 h-6 text-gray-500 hover:text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                      <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
+                      </svg>
+                      <span class="sr-only">Instagram account</span>
+                  </a>
+              </div>
+          </div>
+        </div>
+    </footer>
+
+  <script src="https://kit.fontawesome.com/e9236a8e9c.js" crossorigin="anonymous"></script>
+
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>  
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+  <script src="./js/formulario.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    
+</body>
+</html>
